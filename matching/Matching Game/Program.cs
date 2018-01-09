@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace matching
+namespace Matching_Game
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace matching
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new GameWindow());
         }
     }
 }
