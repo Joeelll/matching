@@ -17,6 +17,12 @@ namespace matching
         List<int> X = new List<int>();
         List<int> Y = new List<int>();
         bool again = false;
+        PictureBox PendingImage1;
+        PictureBox PendingImage2;
+
+
+        //List<int> IDS = new List<int>();
+        //List<PictureBox> pictureboxes = new List<PictureBox>();
 
         public Form1()
         {
@@ -25,9 +31,12 @@ namespace matching
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            foreach (PictureBox picture in CardsHolder.Controls)
+            {
+                picture.Enabled = false;
+            }
             timer2.Start();
             timer1.Start();
-
             Card1.Image = Properties.Resources.Card1;
             DupCard1.Image = Properties.Resources.Card1;
             Card2.Image = Properties.Resources.Card2;
@@ -51,6 +60,8 @@ namespace matching
             timer1.Stop();
             foreach (PictureBox picture in CardsHolder.Controls)
             {
+                picture.Enabled = true;
+                picture.Cursor = Cursors.Hand;
                 picture.Image = null;
             }
         }
@@ -68,84 +79,438 @@ namespace matching
            
         }
 
+        #region Cards
         private void Card1_Click(object sender, EventArgs e)
         {
             Card1.Image = Properties.Resources.Card1;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card1;
+            }
+            else if(PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card1;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard1_Click(object sender, EventArgs e)
         {
             DupCard1.Image = Properties.Resources.Card1;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard1;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard1;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card2_Click(object sender, EventArgs e)
         {
             Card2.Image = Properties.Resources.Card2;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card2;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card2;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard2_Click(object sender, EventArgs e)
         {
             DupCard2.Image = Properties.Resources.Card2;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard2;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard2;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card3_Click(object sender, EventArgs e)
         {
             Card3.Image = Properties.Resources.Card3;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card3;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card3;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard3_Click(object sender, EventArgs e)
         {
             DupCard3.Image = Properties.Resources.Card3;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard3;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard3;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card4_Click(object sender, EventArgs e)
         {
             Card4.Image = Properties.Resources.Card4;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card4;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card4;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard4_Click(object sender, EventArgs e)
         {
             DupCard4.Image = Properties.Resources.Card4;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard4;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard4;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card5_Click(object sender, EventArgs e)
         {
             Card5.Image = Properties.Resources.Card5;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card5;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card5;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard5_Click(object sender, EventArgs e)
         {
             DupCard5.Image = Properties.Resources.Card5;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard5;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard5;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card6_Click(object sender, EventArgs e)
         {
             Card6.Image = Properties.Resources.Card6;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card6;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card6;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard6_Click(object sender, EventArgs e)
         {
             DupCard6.Image = Properties.Resources.Card6;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard6;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard6;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card7_Click(object sender, EventArgs e)
         {
             Card7.Image = Properties.Resources.Card7;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card7;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card7;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard7_Click(object sender, EventArgs e)
         {
             DupCard7.Image = Properties.Resources.Card7;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard7;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard7;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void Card8_Click(object sender, EventArgs e)
         {
             Card8.Image = Properties.Resources.Card8;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = Card8;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = Card8;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
 
         private void DupCard8_Click(object sender, EventArgs e)
         {
             DupCard8.Image = Properties.Resources.Card8;
+            if (PendingImage1 == null)
+            {
+                PendingImage1 = DupCard8;
+            }
+            else if (PendingImage1 != null && PendingImage2 == null)
+            {
+                PendingImage2 = DupCard8;
+            }
+            if (PendingImage1 != null && PendingImage2 != null)
+            {
+                if (PendingImage1.Tag == PendingImage2.Tag)
+                {
+
+                }
+                else
+                {
+                    PendingImage1.Image = null;
+                    PendingImage2.Image = null;
+                }
+                PendingImage1 = null;
+                PendingImage2 = null;
+            }
         }
+        #endregion
     }
 }
