@@ -49,6 +49,8 @@
             this.Card2 = new System.Windows.Forms.PictureBox();
             this.DupCard1 = new System.Windows.Forms.PictureBox();
             this.Card1 = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.CardsHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DupCard8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).BeginInit();
@@ -90,8 +92,7 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // CardsHolder
@@ -125,6 +126,7 @@
             this.DupCard8.Size = new System.Drawing.Size(123, 90);
             this.DupCard8.TabIndex = 21;
             this.DupCard8.TabStop = false;
+            this.DupCard8.Click += new System.EventHandler(this.DupCard8_Click);
             // 
             // Card8
             // 
@@ -134,6 +136,7 @@
             this.Card8.Size = new System.Drawing.Size(123, 90);
             this.Card8.TabIndex = 20;
             this.Card8.TabStop = false;
+            this.Card8.Click += new System.EventHandler(this.Card8_Click);
             // 
             // DupCard7
             // 
@@ -143,6 +146,7 @@
             this.DupCard7.Size = new System.Drawing.Size(123, 90);
             this.DupCard7.TabIndex = 19;
             this.DupCard7.TabStop = false;
+            this.DupCard7.Click += new System.EventHandler(this.DupCard7_Click);
             // 
             // Card7
             // 
@@ -152,6 +156,7 @@
             this.Card7.Size = new System.Drawing.Size(123, 90);
             this.Card7.TabIndex = 18;
             this.Card7.TabStop = false;
+            this.Card7.Click += new System.EventHandler(this.Card7_Click);
             // 
             // DupCard6
             // 
@@ -161,6 +166,7 @@
             this.DupCard6.Size = new System.Drawing.Size(123, 90);
             this.DupCard6.TabIndex = 15;
             this.DupCard6.TabStop = false;
+            this.DupCard6.Click += new System.EventHandler(this.DupCard6_Click);
             // 
             // Card6
             // 
@@ -170,6 +176,7 @@
             this.Card6.Size = new System.Drawing.Size(123, 90);
             this.Card6.TabIndex = 14;
             this.Card6.TabStop = false;
+            this.Card6.Click += new System.EventHandler(this.Card6_Click);
             // 
             // DupCard5
             // 
@@ -179,6 +186,7 @@
             this.DupCard5.Size = new System.Drawing.Size(123, 90);
             this.DupCard5.TabIndex = 13;
             this.DupCard5.TabStop = false;
+            this.DupCard5.Click += new System.EventHandler(this.DupCard5_Click);
             // 
             // Card5
             // 
@@ -188,6 +196,7 @@
             this.Card5.Size = new System.Drawing.Size(123, 90);
             this.Card5.TabIndex = 12;
             this.Card5.TabStop = false;
+            this.Card5.Click += new System.EventHandler(this.Card5_Click);
             // 
             // DupCard4
             // 
@@ -197,6 +206,7 @@
             this.DupCard4.Size = new System.Drawing.Size(123, 90);
             this.DupCard4.TabIndex = 9;
             this.DupCard4.TabStop = false;
+            this.DupCard4.Click += new System.EventHandler(this.DupCard4_Click);
             // 
             // Card4
             // 
@@ -206,6 +216,7 @@
             this.Card4.Size = new System.Drawing.Size(123, 90);
             this.Card4.TabIndex = 8;
             this.Card4.TabStop = false;
+            this.Card4.Click += new System.EventHandler(this.Card4_Click);
             // 
             // DupCard3
             // 
@@ -215,6 +226,7 @@
             this.DupCard3.Size = new System.Drawing.Size(123, 90);
             this.DupCard3.TabIndex = 7;
             this.DupCard3.TabStop = false;
+            this.DupCard3.Click += new System.EventHandler(this.DupCard3_Click);
             // 
             // Card3
             // 
@@ -224,6 +236,7 @@
             this.Card3.Size = new System.Drawing.Size(123, 90);
             this.Card3.TabIndex = 6;
             this.Card3.TabStop = false;
+            this.Card3.Click += new System.EventHandler(this.Card3_Click);
             // 
             // DupCard2
             // 
@@ -233,6 +246,7 @@
             this.DupCard2.Size = new System.Drawing.Size(123, 90);
             this.DupCard2.TabIndex = 3;
             this.DupCard2.TabStop = false;
+            this.DupCard2.Click += new System.EventHandler(this.DupCard2_Click);
             // 
             // Card2
             // 
@@ -242,6 +256,7 @@
             this.Card2.Size = new System.Drawing.Size(123, 90);
             this.Card2.TabIndex = 2;
             this.Card2.TabStop = false;
+            this.Card2.Click += new System.EventHandler(this.Card2_Click);
             // 
             // DupCard1
             // 
@@ -251,6 +266,7 @@
             this.DupCard1.Size = new System.Drawing.Size(123, 90);
             this.DupCard1.TabIndex = 1;
             this.DupCard1.TabStop = false;
+            this.DupCard1.Click += new System.EventHandler(this.DupCard1_Click);
             // 
             // Card1
             // 
@@ -260,12 +276,29 @@
             this.Card1.Size = new System.Drawing.Size(123, 90);
             this.Card1.TabIndex = 0;
             this.Card1.TabStop = false;
+            this.Card1.Click += new System.EventHandler(this.Card1_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label2.Location = new System.Drawing.Point(593, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "5";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 421);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.CardsHolder);
             this.Controls.Add(this.Score);
             this.Controls.Add(this.label1);
@@ -315,6 +348,8 @@
         private System.Windows.Forms.PictureBox Card2;
         private System.Windows.Forms.PictureBox DupCard1;
         private System.Windows.Forms.PictureBox Card1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label2;
     }
 }
 
