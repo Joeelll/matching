@@ -161,8 +161,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card2.Enabled = false;
+                    DupCard2.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -190,8 +190,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card2.Enabled = false;
+                    DupCard2.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -219,8 +219,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card3.Enabled = false;
+                    DupCard3.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -248,8 +248,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card3.Enabled = false;
+                    DupCard3.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -277,8 +277,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card4.Enabled = false;
+                    DupCard4.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -306,8 +306,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card4.Enabled = false;
+                    DupCard4.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -335,8 +335,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card5.Enabled = false;
+                    DupCard5.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -364,8 +364,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card5.Enabled = false;
+                    DupCard5.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -393,8 +393,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card6.Enabled = false;
+                    DupCard6.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -422,8 +422,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card6.Enabled = false;
+                    DupCard6.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -451,8 +451,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card7.Enabled = false;
+                    DupCard7.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -480,8 +480,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card7.Enabled = false;
+                    DupCard7.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -509,8 +509,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card8.Enabled = false;
+                    DupCard8.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
@@ -538,8 +538,8 @@ namespace matching
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
-                    Card1.Enabled = false;
-                    DupCard1.Enabled = false;
+                    Card8.Enabled = false;
+                    DupCard8.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
