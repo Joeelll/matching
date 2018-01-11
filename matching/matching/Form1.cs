@@ -14,8 +14,7 @@ namespace matching
     {
         int score = 0;
         Random Location = new Random();
-        List<int> X = new List<int>();
-        List<int> Y = new List<int>();
+        List<Point> points = new List<Point>();
         bool again = false;
         PictureBox PendingImage1;
         PictureBox PendingImage2;
@@ -34,7 +33,16 @@ namespace matching
             foreach (PictureBox picture in CardsHolder.Controls)
             {
                 picture.Enabled = false;
+                points.Add(picture.Location);
             }
+            foreach (PictureBox picture in CardsHolder.Controls)
+            {
+                int next = Location.Next(points.Count);
+                Point p = points[next];
+                picture.Location = p;
+                points.Remove(p);
+            }
+
             timer2.Start();
             timer1.Start();
             Card1.Image = Properties.Resources.Card1;
@@ -103,6 +111,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -131,6 +140,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -159,6 +169,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -187,6 +198,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -215,6 +227,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -243,6 +256,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -271,7 +285,8 @@ namespace matching
                 }
                 else
                 {
-                     timer3.Start();
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
+                    timer3.Start();
                 }
             }
         }
@@ -299,6 +314,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -327,6 +343,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -355,6 +372,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -383,6 +401,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -411,6 +430,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -439,6 +459,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -467,6 +488,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -495,6 +517,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
@@ -523,6 +546,7 @@ namespace matching
                 }
                 else
                 {
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
                 }
             }
