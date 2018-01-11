@@ -80,7 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\card1.jpg" />
+    <Content Include="Resources\Card1.jpg" />
     <Content Include="Resources\card10.jpg" />
     <Content Include="Resources\card11.jpg" />
     <Content Include="Resources\card16.jpg" />
