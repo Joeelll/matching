@@ -19,10 +19,6 @@ namespace matching
         PictureBox PendingImage1;
         PictureBox PendingImage2;
 
-
-        //List<int> IDS = new List<int>();
-        //List<PictureBox> pictureboxes = new List<PictureBox>();
-
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +26,8 @@ namespace matching
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label2.Text = "5";
+            Score.Text = "0";
             foreach (PictureBox picture in CardsHolder.Controls)
             {
                 picture.Enabled = false;
@@ -560,6 +558,11 @@ namespace matching
             PendingImage2.Image = null;
             PendingImage1 = null;
             PendingImage2 = null;
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            Form1_Load(sender, e);
         }
     }
 }

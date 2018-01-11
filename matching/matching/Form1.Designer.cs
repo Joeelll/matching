@@ -52,6 +52,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.reset = new System.Windows.Forms.Button();
             this.CardsHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DupCard8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).BeginInit();
@@ -315,11 +316,22 @@
             this.timer3.Interval = 500;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // reset
+            // 
+            this.reset.Location = new System.Drawing.Point(551, 68);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(75, 23);
+            this.reset.TabIndex = 5;
+            this.reset.Text = "Play Again";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 421);
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CardsHolder);
             this.Controls.Add(this.Score);
@@ -373,6 +385,7 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Button reset;
     }
 }
 
