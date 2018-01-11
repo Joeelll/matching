@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
@@ -29,7 +30,10 @@ namespace LastTry
 
         private void InitializeComponent()
         {
+            List<int> mylist = new List<int>(new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9});
             Random rnd = new Random();
+
+
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -51,9 +55,9 @@ namespace LastTry
             this.button1.Size = new System.Drawing.Size(200, 200);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
-            int random = rnd.Next(0, 10);
-            string rnd_file = random.ToString();
-            button1.Image = Image.FromFile(rnd_file + ".jpg");
+            int rnd_file = rnd.Next(mylist.Count);
+            button1.Image = Image.FromFile(rnd_file.ToString() + ".jpg");
+            mylist.Remove(rnd_file);
             // 
             // button2
             // 
@@ -62,16 +66,10 @@ namespace LastTry
             this.button2.Size = new System.Drawing.Size(200, 200);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
-            random = rnd.Next(0, 10);
-            rnd_file = random.ToString();
-            button2.Image = Image.FromFile(rnd_file + ".jpg");
-            while (button2.Image == button1.Image)
-            {
-                random = rnd.Next(0, 10);
-                rnd_file = random.ToString();
-                button2.Image = Image.FromFile(rnd_file + ".jpg");
-            }
-
+            rnd_file = rnd.Next(mylist.Count);
+            button2.Image = Image.FromFile(rnd_file.ToString() + ".jpg");
+            mylist.Remove(rnd_file);
+            
             
             // 
             // button3
