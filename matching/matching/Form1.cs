@@ -99,11 +99,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -126,11 +123,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -153,11 +147,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -180,11 +171,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -207,11 +195,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -234,11 +219,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -261,11 +243,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                     timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -288,11 +267,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -315,11 +291,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -342,11 +315,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -369,11 +339,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -396,11 +363,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -423,11 +387,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -450,11 +411,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -477,11 +435,8 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
 
@@ -504,13 +459,19 @@ namespace matching
                 }
                 else
                 {
-                    PendingImage1.Image = null;
-                    PendingImage2.Image = null;
+                    timer3.Start();
                 }
-                PendingImage1 = null;
-                PendingImage2 = null;
             }
         }
         #endregion
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            timer3.Stop();
+            PendingImage1.Image = null;
+            PendingImage2.Image = null;
+            PendingImage1 = null;
+            PendingImage2 = null;
+        }
     }
 }

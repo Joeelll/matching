@@ -51,6 +51,7 @@
             this.Card1 = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.CardsHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DupCard8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).BeginInit();
@@ -84,7 +85,7 @@
             // 
             this.Score.AutoSize = true;
             this.Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Score.Location = new System.Drawing.Point(623, 15);
+            this.Score.Location = new System.Drawing.Point(602, 15);
             this.Score.Name = "Score";
             this.Score.Size = new System.Drawing.Size(24, 25);
             this.Score.TabIndex = 2;
@@ -309,6 +310,11 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "5";
             // 
+            // timer3
+            // 
+            this.timer3.Interval = 500;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +372,7 @@
         private System.Windows.Forms.PictureBox Card1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 
