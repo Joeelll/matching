@@ -95,7 +95,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -119,7 +123,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -143,7 +151,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -167,7 +179,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -191,7 +207,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -215,7 +235,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -239,7 +263,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -263,7 +291,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -287,7 +319,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -311,7 +347,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -335,7 +375,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -359,7 +403,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -383,7 +431,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -407,7 +459,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -431,7 +487,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
@@ -455,7 +515,11 @@ namespace matching
             {
                 if (PendingImage1.Tag == PendingImage2.Tag)
                 {
-
+                    PendingImage1 = null;
+                    PendingImage2 = null;
+                    Card1.Enabled = false;
+                    DupCard1.Enabled = false;
+                    Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
                 else
                 {
