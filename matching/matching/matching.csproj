@@ -81,17 +81,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Card1.jpg" />
-    <Content Include="Resources\card10.jpg" />
-    <Content Include="Resources\card11.jpg" />
-    <Content Include="Resources\card16.jpg" />
-    <Content Include="Resources\card2.jpg" />
-    <Content Include="Resources\card3.jpg" />
-    <Content Include="Resources\card4.jpg" />
-    <Content Include="Resources\card5.jpg" />
-    <Content Include="Resources\card6.jpg" />
-    <Content Include="Resources\card7.jpg" />
-    <Content Include="Resources\card8.jpg" />
-    <Content Include="Resources\card9.jpg" />
+    <Content Include="Resources\Card2.jpg" />
+    <Content Include="Resources\Card3.jpg" />
+    <Content Include="Resources\Card4.jpg" />
+    <Content Include="Resources\Card5.jpg" />
+    <Content Include="Resources\Card6.jpg" />
+    <Content Include="Resources\Card7.jpg" />
+    <Content Include="Resources\Card8.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
