@@ -23,6 +23,7 @@ namespace matching
         public MatchingGame()
         {
             Thread t = new Thread(new ThreadStart(SplashStart));
+            
             t.Start();
             Thread.Sleep(5000);
             t.Abort();
@@ -111,7 +112,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -140,7 +141,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -169,7 +170,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -198,7 +199,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -227,7 +228,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -256,7 +257,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -285,7 +286,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -314,7 +315,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -343,7 +344,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -372,7 +373,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -401,7 +402,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -430,7 +431,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -459,7 +460,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -488,7 +489,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -517,7 +518,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;
@@ -546,7 +547,7 @@ namespace matching
             }
             if (PendingImage1 != null && PendingImage2 != null)
             {
-                if (PendingImage1.Tag == PendingImage2.Tag)
+                if (PendingImage1.Tag == PendingImage2.Tag && PendingImage1 != PendingImage2)
                 {
                     PendingImage1 = null;
                     PendingImage2 = null;

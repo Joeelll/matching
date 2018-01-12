@@ -34,11 +34,6 @@
             this.Score = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.CardsHolder = new System.Windows.Forms.Panel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.reset = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.DupCard8 = new System.Windows.Forms.PictureBox();
             this.Card8 = new System.Windows.Forms.PictureBox();
             this.DupCard7 = new System.Windows.Forms.PictureBox();
@@ -55,6 +50,11 @@
             this.Card2 = new System.Windows.Forms.PictureBox();
             this.DupCard1 = new System.Windows.Forms.PictureBox();
             this.Card1 = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.reset = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.CardsHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DupCard8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).BeginInit();
@@ -121,47 +121,6 @@
             this.CardsHolder.Name = "CardsHolder";
             this.CardsHolder.Size = new System.Drawing.Size(519, 394);
             this.CardsHolder.TabIndex = 3;
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 1000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label2.Location = new System.Drawing.Point(624, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "5";
-            // 
-            // timer3
-            // 
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
-            // reset
-            // 
-            this.reset.Location = new System.Drawing.Point(551, 68);
-            this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(75, 23);
-            this.reset.TabIndex = 5;
-            this.reset.Text = "Play Again";
-            this.reset.UseVisualStyleBackColor = true;
-            this.reset.Click += new System.EventHandler(this.reset_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label3.Location = new System.Drawing.Point(533, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 19);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Countdown:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DupCard8
             // 
@@ -371,11 +330,55 @@
             this.Card1.Tag = "1";
             this.Card1.Click += new System.EventHandler(this.Card1_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label2.Location = new System.Drawing.Point(624, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "5";
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 250;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // reset
+            // 
+            this.reset.Location = new System.Drawing.Point(551, 68);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(75, 23);
+            this.reset.TabIndex = 5;
+            this.reset.Text = "Play Again";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label3.Location = new System.Drawing.Point(533, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 19);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Countdown:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // MatchingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(802, 513);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.reset);
@@ -383,8 +386,13 @@
             this.Controls.Add(this.CardsHolder);
             this.Controls.Add(this.Score);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MatchingGame";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matching Game";
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Load += new System.EventHandler(this.Form1_Load);
             this.CardsHolder.ResumeLayout(false);
