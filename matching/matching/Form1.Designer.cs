@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.Score = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.CardsHolder = new System.Windows.Forms.Panel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.reset = new System.Windows.Forms.Button();
             this.DupCard8 = new System.Windows.Forms.PictureBox();
             this.Card8 = new System.Windows.Forms.PictureBox();
             this.DupCard7 = new System.Windows.Forms.PictureBox();
@@ -49,10 +54,6 @@
             this.Card2 = new System.Windows.Forms.PictureBox();
             this.DupCard1 = new System.Windows.Forms.PictureBox();
             this.Card1 = new System.Windows.Forms.PictureBox();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.reset = new System.Windows.Forms.Button();
             this.CardsHolder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DupCard8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).BeginInit();
@@ -120,182 +121,6 @@
             this.CardsHolder.Size = new System.Drawing.Size(519, 394);
             this.CardsHolder.TabIndex = 3;
             // 
-            // DupCard8
-            // 
-            this.DupCard8.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard8.Location = new System.Drawing.Point(390, 291);
-            this.DupCard8.Name = "DupCard8";
-            this.DupCard8.Size = new System.Drawing.Size(123, 90);
-            this.DupCard8.TabIndex = 21;
-            this.DupCard8.TabStop = false;
-            this.DupCard8.Tag = "8";
-            this.DupCard8.Click += new System.EventHandler(this.DupCard8_Click);
-            // 
-            // Card8
-            // 
-            this.Card8.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card8.Location = new System.Drawing.Point(261, 291);
-            this.Card8.Name = "Card8";
-            this.Card8.Size = new System.Drawing.Size(123, 90);
-            this.Card8.TabIndex = 20;
-            this.Card8.TabStop = false;
-            this.Card8.Tag = "8";
-            this.Card8.Click += new System.EventHandler(this.Card8_Click);
-            // 
-            // DupCard7
-            // 
-            this.DupCard7.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard7.Location = new System.Drawing.Point(132, 291);
-            this.DupCard7.Name = "DupCard7";
-            this.DupCard7.Size = new System.Drawing.Size(123, 90);
-            this.DupCard7.TabIndex = 19;
-            this.DupCard7.TabStop = false;
-            this.DupCard7.Tag = "7";
-            this.DupCard7.Click += new System.EventHandler(this.DupCard7_Click);
-            // 
-            // Card7
-            // 
-            this.Card7.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card7.Location = new System.Drawing.Point(3, 291);
-            this.Card7.Name = "Card7";
-            this.Card7.Size = new System.Drawing.Size(123, 90);
-            this.Card7.TabIndex = 18;
-            this.Card7.TabStop = false;
-            this.Card7.Tag = "7";
-            this.Card7.Click += new System.EventHandler(this.Card7_Click);
-            // 
-            // DupCard6
-            // 
-            this.DupCard6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard6.Location = new System.Drawing.Point(390, 195);
-            this.DupCard6.Name = "DupCard6";
-            this.DupCard6.Size = new System.Drawing.Size(123, 90);
-            this.DupCard6.TabIndex = 15;
-            this.DupCard6.TabStop = false;
-            this.DupCard6.Tag = "6";
-            this.DupCard6.Click += new System.EventHandler(this.DupCard6_Click);
-            // 
-            // Card6
-            // 
-            this.Card6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card6.Location = new System.Drawing.Point(261, 195);
-            this.Card6.Name = "Card6";
-            this.Card6.Size = new System.Drawing.Size(123, 90);
-            this.Card6.TabIndex = 14;
-            this.Card6.TabStop = false;
-            this.Card6.Tag = "6";
-            this.Card6.Click += new System.EventHandler(this.Card6_Click);
-            // 
-            // DupCard5
-            // 
-            this.DupCard5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard5.Location = new System.Drawing.Point(132, 195);
-            this.DupCard5.Name = "DupCard5";
-            this.DupCard5.Size = new System.Drawing.Size(123, 90);
-            this.DupCard5.TabIndex = 13;
-            this.DupCard5.TabStop = false;
-            this.DupCard5.Tag = "5";
-            this.DupCard5.Click += new System.EventHandler(this.DupCard5_Click);
-            // 
-            // Card5
-            // 
-            this.Card5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card5.Location = new System.Drawing.Point(3, 195);
-            this.Card5.Name = "Card5";
-            this.Card5.Size = new System.Drawing.Size(123, 90);
-            this.Card5.TabIndex = 12;
-            this.Card5.TabStop = false;
-            this.Card5.Tag = "5";
-            this.Card5.Click += new System.EventHandler(this.Card5_Click);
-            // 
-            // DupCard4
-            // 
-            this.DupCard4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard4.Location = new System.Drawing.Point(390, 99);
-            this.DupCard4.Name = "DupCard4";
-            this.DupCard4.Size = new System.Drawing.Size(123, 90);
-            this.DupCard4.TabIndex = 9;
-            this.DupCard4.TabStop = false;
-            this.DupCard4.Tag = "4";
-            this.DupCard4.Click += new System.EventHandler(this.DupCard4_Click);
-            // 
-            // Card4
-            // 
-            this.Card4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card4.Location = new System.Drawing.Point(261, 99);
-            this.Card4.Name = "Card4";
-            this.Card4.Size = new System.Drawing.Size(123, 90);
-            this.Card4.TabIndex = 8;
-            this.Card4.TabStop = false;
-            this.Card4.Tag = "4";
-            this.Card4.Click += new System.EventHandler(this.Card4_Click);
-            // 
-            // DupCard3
-            // 
-            this.DupCard3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard3.Location = new System.Drawing.Point(132, 99);
-            this.DupCard3.Name = "DupCard3";
-            this.DupCard3.Size = new System.Drawing.Size(123, 90);
-            this.DupCard3.TabIndex = 7;
-            this.DupCard3.TabStop = false;
-            this.DupCard3.Tag = "3";
-            this.DupCard3.Click += new System.EventHandler(this.DupCard3_Click);
-            // 
-            // Card3
-            // 
-            this.Card3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card3.Location = new System.Drawing.Point(3, 99);
-            this.Card3.Name = "Card3";
-            this.Card3.Size = new System.Drawing.Size(123, 90);
-            this.Card3.TabIndex = 6;
-            this.Card3.TabStop = false;
-            this.Card3.Tag = "3";
-            this.Card3.Click += new System.EventHandler(this.Card3_Click);
-            // 
-            // DupCard2
-            // 
-            this.DupCard2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard2.Location = new System.Drawing.Point(390, 3);
-            this.DupCard2.Name = "DupCard2";
-            this.DupCard2.Size = new System.Drawing.Size(123, 90);
-            this.DupCard2.TabIndex = 3;
-            this.DupCard2.TabStop = false;
-            this.DupCard2.Tag = "2";
-            this.DupCard2.Click += new System.EventHandler(this.DupCard2_Click);
-            // 
-            // Card2
-            // 
-            this.Card2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card2.Location = new System.Drawing.Point(261, 3);
-            this.Card2.Name = "Card2";
-            this.Card2.Size = new System.Drawing.Size(123, 90);
-            this.Card2.TabIndex = 2;
-            this.Card2.TabStop = false;
-            this.Card2.Tag = "2";
-            this.Card2.Click += new System.EventHandler(this.Card2_Click);
-            // 
-            // DupCard1
-            // 
-            this.DupCard1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.DupCard1.Location = new System.Drawing.Point(132, 3);
-            this.DupCard1.Name = "DupCard1";
-            this.DupCard1.Size = new System.Drawing.Size(123, 90);
-            this.DupCard1.TabIndex = 1;
-            this.DupCard1.TabStop = false;
-            this.DupCard1.Tag = "1";
-            this.DupCard1.Click += new System.EventHandler(this.DupCard1_Click);
-            // 
-            // Card1
-            // 
-            this.Card1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Card1.Location = new System.Drawing.Point(3, 3);
-            this.Card1.Name = "Card1";
-            this.Card1.Size = new System.Drawing.Size(123, 90);
-            this.Card1.TabIndex = 0;
-            this.Card1.TabStop = false;
-            this.Card1.Tag = "1";
-            this.Card1.Click += new System.EventHandler(this.Card1_Click);
-            // 
             // timer2
             // 
             this.timer2.Interval = 1000;
@@ -325,11 +150,219 @@
             this.reset.UseVisualStyleBackColor = true;
             this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
+            // DupCard8
+            // 
+            this.DupCard8.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard8.BackgroundImage")));
+            this.DupCard8.Image = global::matching.Properties.Resources.question;
+            this.DupCard8.Location = new System.Drawing.Point(390, 291);
+            this.DupCard8.Name = "DupCard8";
+            this.DupCard8.Size = new System.Drawing.Size(123, 90);
+            this.DupCard8.TabIndex = 21;
+            this.DupCard8.TabStop = false;
+            this.DupCard8.Tag = "8";
+            this.DupCard8.Click += new System.EventHandler(this.DupCard8_Click);
+            // 
+            // Card8
+            // 
+            this.Card8.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card8.BackgroundImage")));
+            this.Card8.Image = ((System.Drawing.Image)(resources.GetObject("Card8.Image")));
+            this.Card8.Location = new System.Drawing.Point(261, 291);
+            this.Card8.Name = "Card8";
+            this.Card8.Size = new System.Drawing.Size(123, 90);
+            this.Card8.TabIndex = 20;
+            this.Card8.TabStop = false;
+            this.Card8.Tag = "8";
+            this.Card8.Click += new System.EventHandler(this.Card8_Click);
+            // 
+            // DupCard7
+            // 
+            this.DupCard7.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard7.BackgroundImage")));
+            this.DupCard7.Image = ((System.Drawing.Image)(resources.GetObject("DupCard7.Image")));
+            this.DupCard7.Location = new System.Drawing.Point(132, 291);
+            this.DupCard7.Name = "DupCard7";
+            this.DupCard7.Size = new System.Drawing.Size(123, 90);
+            this.DupCard7.TabIndex = 19;
+            this.DupCard7.TabStop = false;
+            this.DupCard7.Tag = "7";
+            this.DupCard7.Click += new System.EventHandler(this.DupCard7_Click);
+            // 
+            // Card7
+            // 
+            this.Card7.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card7.BackgroundImage")));
+            this.Card7.Image = ((System.Drawing.Image)(resources.GetObject("Card7.Image")));
+            this.Card7.Location = new System.Drawing.Point(3, 291);
+            this.Card7.Name = "Card7";
+            this.Card7.Size = new System.Drawing.Size(123, 90);
+            this.Card7.TabIndex = 18;
+            this.Card7.TabStop = false;
+            this.Card7.Tag = "7";
+            this.Card7.Click += new System.EventHandler(this.Card7_Click);
+            // 
+            // DupCard6
+            // 
+            this.DupCard6.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard6.BackgroundImage")));
+            this.DupCard6.Image = global::matching.Properties.Resources.question;
+            this.DupCard6.Location = new System.Drawing.Point(390, 195);
+            this.DupCard6.Name = "DupCard6";
+            this.DupCard6.Size = new System.Drawing.Size(123, 90);
+            this.DupCard6.TabIndex = 15;
+            this.DupCard6.TabStop = false;
+            this.DupCard6.Tag = "6";
+            this.DupCard6.Click += new System.EventHandler(this.DupCard6_Click);
+            // 
+            // Card6
+            // 
+            this.Card6.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card6.BackgroundImage")));
+            this.Card6.Image = ((System.Drawing.Image)(resources.GetObject("Card6.Image")));
+            this.Card6.Location = new System.Drawing.Point(261, 195);
+            this.Card6.Name = "Card6";
+            this.Card6.Size = new System.Drawing.Size(123, 90);
+            this.Card6.TabIndex = 14;
+            this.Card6.TabStop = false;
+            this.Card6.Tag = "6";
+            this.Card6.Click += new System.EventHandler(this.Card6_Click);
+            // 
+            // DupCard5
+            // 
+            this.DupCard5.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard5.BackgroundImage")));
+            this.DupCard5.Image = ((System.Drawing.Image)(resources.GetObject("DupCard5.Image")));
+            this.DupCard5.Location = new System.Drawing.Point(132, 195);
+            this.DupCard5.Name = "DupCard5";
+            this.DupCard5.Size = new System.Drawing.Size(123, 90);
+            this.DupCard5.TabIndex = 13;
+            this.DupCard5.TabStop = false;
+            this.DupCard5.Tag = "5";
+            this.DupCard5.Click += new System.EventHandler(this.DupCard5_Click);
+            // 
+            // Card5
+            // 
+            this.Card5.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card5.BackgroundImage")));
+            this.Card5.Image = ((System.Drawing.Image)(resources.GetObject("Card5.Image")));
+            this.Card5.Location = new System.Drawing.Point(3, 195);
+            this.Card5.Name = "Card5";
+            this.Card5.Size = new System.Drawing.Size(123, 90);
+            this.Card5.TabIndex = 12;
+            this.Card5.TabStop = false;
+            this.Card5.Tag = "5";
+            this.Card5.Click += new System.EventHandler(this.Card5_Click);
+            // 
+            // DupCard4
+            // 
+            this.DupCard4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard4.BackgroundImage")));
+            this.DupCard4.Image = ((System.Drawing.Image)(resources.GetObject("DupCard4.Image")));
+            this.DupCard4.Location = new System.Drawing.Point(390, 99);
+            this.DupCard4.Name = "DupCard4";
+            this.DupCard4.Size = new System.Drawing.Size(123, 90);
+            this.DupCard4.TabIndex = 9;
+            this.DupCard4.TabStop = false;
+            this.DupCard4.Tag = "4";
+            this.DupCard4.Click += new System.EventHandler(this.DupCard4_Click);
+            // 
+            // Card4
+            // 
+            this.Card4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card4.BackgroundImage")));
+            this.Card4.Image = ((System.Drawing.Image)(resources.GetObject("Card4.Image")));
+            this.Card4.Location = new System.Drawing.Point(261, 99);
+            this.Card4.Name = "Card4";
+            this.Card4.Size = new System.Drawing.Size(123, 90);
+            this.Card4.TabIndex = 8;
+            this.Card4.TabStop = false;
+            this.Card4.Tag = "4";
+            this.Card4.Click += new System.EventHandler(this.Card4_Click);
+            // 
+            // DupCard3
+            // 
+            this.DupCard3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard3.BackgroundImage")));
+            this.DupCard3.Image = ((System.Drawing.Image)(resources.GetObject("DupCard3.Image")));
+            this.DupCard3.Location = new System.Drawing.Point(132, 99);
+            this.DupCard3.Name = "DupCard3";
+            this.DupCard3.Size = new System.Drawing.Size(123, 90);
+            this.DupCard3.TabIndex = 7;
+            this.DupCard3.TabStop = false;
+            this.DupCard3.Tag = "3";
+            this.DupCard3.Click += new System.EventHandler(this.DupCard3_Click);
+            // 
+            // Card3
+            // 
+            this.Card3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card3.BackgroundImage")));
+            this.Card3.Image = ((System.Drawing.Image)(resources.GetObject("Card3.Image")));
+            this.Card3.Location = new System.Drawing.Point(3, 99);
+            this.Card3.Name = "Card3";
+            this.Card3.Size = new System.Drawing.Size(123, 90);
+            this.Card3.TabIndex = 6;
+            this.Card3.TabStop = false;
+            this.Card3.Tag = "3";
+            this.Card3.Click += new System.EventHandler(this.Card3_Click);
+            // 
+            // DupCard2
+            // 
+            this.DupCard2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard2.BackgroundImage")));
+            this.DupCard2.Image = ((System.Drawing.Image)(resources.GetObject("DupCard2.Image")));
+            this.DupCard2.Location = new System.Drawing.Point(390, 3);
+            this.DupCard2.Name = "DupCard2";
+            this.DupCard2.Size = new System.Drawing.Size(123, 90);
+            this.DupCard2.TabIndex = 3;
+            this.DupCard2.TabStop = false;
+            this.DupCard2.Tag = "2";
+            this.DupCard2.Click += new System.EventHandler(this.DupCard2_Click);
+            // 
+            // Card2
+            // 
+            this.Card2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card2.BackgroundImage")));
+            this.Card2.Image = ((System.Drawing.Image)(resources.GetObject("Card2.Image")));
+            this.Card2.Location = new System.Drawing.Point(261, 3);
+            this.Card2.Name = "Card2";
+            this.Card2.Size = new System.Drawing.Size(123, 90);
+            this.Card2.TabIndex = 2;
+            this.Card2.TabStop = false;
+            this.Card2.Tag = "2";
+            this.Card2.Click += new System.EventHandler(this.Card2_Click);
+            // 
+            // DupCard1
+            // 
+            this.DupCard1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.DupCard1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DupCard1.BackgroundImage")));
+            this.DupCard1.Image = ((System.Drawing.Image)(resources.GetObject("DupCard1.Image")));
+            this.DupCard1.Location = new System.Drawing.Point(132, 3);
+            this.DupCard1.Name = "DupCard1";
+            this.DupCard1.Size = new System.Drawing.Size(123, 90);
+            this.DupCard1.TabIndex = 1;
+            this.DupCard1.TabStop = false;
+            this.DupCard1.Tag = "1";
+            this.DupCard1.Click += new System.EventHandler(this.DupCard1_Click);
+            // 
+            // Card1
+            // 
+            this.Card1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Card1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Card1.BackgroundImage")));
+            this.Card1.Image = ((System.Drawing.Image)(resources.GetObject("Card1.Image")));
+            this.Card1.Location = new System.Drawing.Point(3, 3);
+            this.Card1.Name = "Card1";
+            this.Card1.Size = new System.Drawing.Size(123, 90);
+            this.Card1.TabIndex = 0;
+            this.Card1.TabStop = false;
+            this.Card1.Tag = "1";
+            this.Card1.Click += new System.EventHandler(this.Card1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumBlue;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(653, 421);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.label2);

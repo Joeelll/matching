@@ -80,6 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\question.jpg" />
+    <None Include="Resources\8 - Copy.jpg" />
+    <None Include="Resources\8 - Copy1.jpg" />
     <Content Include="Resources\Card1.jpg" />
     <Content Include="Resources\Card2.jpg" />
     <Content Include="Resources\Card3.jpg" />
@@ -87,6 +90,7 @@
     <Content Include="Resources\Card5.jpg" />
     <Content Include="Resources\Card6.jpg" />
     <Content Include="Resources\Card7.jpg" />
+    <None Include="Resources\Card71.jpg" />
     <Content Include="Resources\Card8.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
