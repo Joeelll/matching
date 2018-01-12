@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -21,11 +22,21 @@ namespace matching
 
         public MatchingGame()
         {
+            Thread t = new Thread(new ThreadStart(SplashStart));
+            t.Start();
+            Thread.Sleep(5000);
+            t.Abort();
             InitializeComponent();
+        }
+
+        public void SplashStart()
+        {
+            Application.Run(new Form2());
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label3.Text = "Countdown:";
             label2.Text = "5";
             Score.Text = "0";
             foreach (PictureBox picture in CardsHolder.Controls)
@@ -81,6 +92,7 @@ namespace matching
             {
                 timer2.Stop();
                 label2.Text = "";
+                label3.Text = "";
             }
            
         }
@@ -563,6 +575,11 @@ namespace matching
         private void reset_Click(object sender, EventArgs e)
         {
             Form1_Load(sender, e);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
