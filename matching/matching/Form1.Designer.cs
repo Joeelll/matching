@@ -370,7 +370,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Countdown:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // MatchingGame
             // 
