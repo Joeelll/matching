@@ -111,7 +111,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -141,7 +140,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -171,7 +169,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -201,7 +198,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -231,7 +227,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -261,7 +256,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -291,7 +285,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -321,7 +314,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -351,7 +343,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -381,7 +372,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -411,7 +401,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -441,7 +430,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -471,7 +459,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -501,7 +488,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -531,7 +517,6 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
@@ -561,66 +546,18 @@ namespace matching
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
-                    Disable_Clicking();
                 }
             }
         }
         #endregion
 
-        private void Disable_Clicking()
-        {
-            Card1.Click -= Card1_Click;
-            Card2.Click -= Card2_Click;
-            Card3.Click -= Card3_Click;
-            Card4.Click -= Card4_Click;
-            Card5.Click -= Card5_Click;
-            Card6.Click -= Card6_Click;
-            Card7.Click -= Card7_Click;
-            Card8.Click -= Card8_Click;
-            DupCard1.Click -= DupCard1_Click;
-            DupCard2.Click -= DupCard2_Click;
-            DupCard3.Click -= DupCard3_Click;
-            DupCard4.Click -= DupCard4_Click;
-            DupCard5.Click -= DupCard5_Click;
-            DupCard6.Click -= DupCard6_Click;
-            DupCard7.Click -= DupCard7_Click;
-            DupCard8.Click -= DupCard8_Click;
-
-        }
-        private void Enable_Clicking()
-        {
-            Card1.Click += Card1_Click;
-            Card2.Click += Card2_Click;
-            Card3.Click += Card3_Click;
-            Card4.Click += Card4_Click;
-            Card5.Click += Card5_Click;
-            Card6.Click += Card6_Click;
-            Card7.Click += Card7_Click;
-            Card8.Click += Card8_Click;
-            DupCard1.Click += DupCard1_Click;
-            DupCard2.Click += DupCard2_Click;
-            DupCard3.Click += DupCard3_Click;
-            DupCard4.Click += DupCard4_Click;
-            DupCard5.Click += DupCard5_Click;
-            DupCard6.Click += DupCard6_Click;
-            DupCard7.Click += DupCard7_Click;
-            DupCard8.Click += DupCard8_Click;
-
-
-        }
-
         private void timer3_Tick(object sender, EventArgs e)
         {
-            Enable_Clicking();
             timer3.Stop();
-            PendingImage1 = null;
-            PendingImage2 = null;
             PendingImage1.Image = null;
             PendingImage2.Image = null;
-
-
-
-
+            PendingImage1 = null;
+            PendingImage2 = null;
         }
 
         private void reset_Click(object sender, EventArgs e)
