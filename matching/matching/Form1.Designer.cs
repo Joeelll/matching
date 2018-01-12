@@ -1,6 +1,6 @@
 ﻿namespace matching
 {
-    partial class Form1
+    partial class MatchingGame
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchingGame));
             this.label1 = new System.Windows.Forms.Label();
             this.Score = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -358,7 +358,7 @@
             this.Card1.Tag = "1";
             this.Card1.Click += new System.EventHandler(this.Card1_Click);
             // 
-            // Form1
+            // MatchingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -369,8 +369,9 @@
             this.Controls.Add(this.CardsHolder);
             this.Controls.Add(this.Score);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MatchingGame";
+            this.Text = "Matching Game";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Load += new System.EventHandler(this.Form1_Load);
             this.CardsHolder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DupCard8)).EndInit();

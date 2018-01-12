@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace matching
 {
-    public partial class Form1 : Form
+    public partial class MatchingGame : Form
     {
         int score = 0;
         Random Location = new Random();
@@ -19,7 +19,7 @@ namespace matching
         PictureBox PendingImage1;
         PictureBox PendingImage2;
 
-        public Form1()
+        public MatchingGame()
         {
             InitializeComponent();
         }
