@@ -313,7 +313,6 @@
             // 
             // timer3
             // 
-            this.timer3.Interval = 100;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // reset
@@ -330,6 +329,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumBlue;
             this.ClientSize = new System.Drawing.Size(653, 421);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.label2);
