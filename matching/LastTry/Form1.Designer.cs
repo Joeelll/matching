@@ -55,9 +55,7 @@ namespace LastTry
             this.button1.Size = new System.Drawing.Size(200, 200);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
-            string rnd_file = mylist[mylist.Count].ToString();
-            button1.Image = Image.FromFile(rnd_file + ".bmp");
-            mylist.Remove(Int32.Parse(rnd_file));
+            
             // 
             // button2
             // 
