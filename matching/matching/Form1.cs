@@ -110,8 +110,9 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
+                    
                 }
             }
         }
@@ -140,8 +141,9 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
+                    
                 }
             }
         }
@@ -170,8 +172,9 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
+                    
                 }
             }
         }
@@ -200,8 +203,9 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
+                    
                 }
             }
         }
@@ -230,8 +234,9 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
+                    
                 }
             }
         }
@@ -260,8 +265,9 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
+                    
                 }
             }
         }
@@ -290,8 +296,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -320,8 +326,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -350,8 +356,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -380,8 +386,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -410,8 +416,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -440,8 +446,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -470,8 +476,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -500,8 +506,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -530,8 +536,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -560,8 +566,8 @@ namespace matching
                 else
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
-                    timer3.Start();
                     Disable_Clicking();
+                    timer3.Start();
                 }
             }
         }
@@ -569,22 +575,7 @@ namespace matching
 
         private void Disable_Clicking()
         {
-            Card1.Click -= Card1_Click;
-            Card2.Click -= Card2_Click;
-            Card3.Click -= Card3_Click;
-            Card4.Click -= Card4_Click;
-            Card5.Click -= Card5_Click;
-            Card6.Click -= Card6_Click;
-            Card7.Click -= Card7_Click;
-            Card8.Click -= Card8_Click;
-            DupCard1.Click -= DupCard1_Click;
-            DupCard2.Click -= DupCard2_Click;
-            DupCard3.Click -= DupCard3_Click;
-            DupCard4.Click -= DupCard4_Click;
-            DupCard5.Click -= DupCard5_Click;
-            DupCard6.Click -= DupCard6_Click;
-            DupCard7.Click -= DupCard7_Click;
-            DupCard8.Click -= DupCard8_Click;
+            
 
         }
         private void Enable_Clicking()
