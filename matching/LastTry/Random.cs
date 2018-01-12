@@ -9,7 +9,7 @@ namespace LastTry
 {
     class Random
     {
-        
+
         public static void Shuffle<T>(IList<T> list)
         {
             System.Random rnd = new System.Random();
@@ -22,10 +22,8 @@ namespace LastTry
                 list[k] = list[n];
                 list[n] = value;
             }
-            
+            List<int> mylist = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            List<int> mylist2 = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
         }
-        List<int> mylist = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
-        List<int> mylist2 = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
-
     }
 }

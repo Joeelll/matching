@@ -24,14 +24,17 @@ namespace LastTry
             }
             base.Dispose(disposing);
         }
-        
+
 
         private void InitializeComponent()
         {
 
-            
-            
 
+
+            List<int> mylist = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            List<int> mylist2 = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            Random.Shuffle(mylist);
+            Random.Shuffle(mylist2);
 
 
             this.button1 = new System.Windows.Forms.Button();
@@ -55,7 +58,7 @@ namespace LastTry
             this.button1.Size = new System.Drawing.Size(200, 200);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
-            
+
             // 
             // button2
             // 
@@ -64,7 +67,7 @@ namespace LastTry
             this.button2.Size = new System.Drawing.Size(200, 200);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
-            string rnd_file2 = mylist[(mylist.Count)-1].ToString();
+            string rnd_file2 = mylist[(mylist.Count)].ToString();
             button2.Image = Image.FromFile(rnd_file2 + ".bmp");
             mylist.Remove(Int32.Parse(rnd_file2));
 
@@ -76,7 +79,7 @@ namespace LastTry
             this.button3.Size = new System.Drawing.Size(200, 200);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
-            string rnd_file3 = mylist[mylist.Count-2].ToString();
+            string rnd_file3 = mylist[mylist.Count].ToString();
             button3.Image = Image.FromFile(rnd_file3 + ".bmp");
             mylist.Remove(Int32.Parse(rnd_file3));
 
@@ -88,7 +91,7 @@ namespace LastTry
             this.button4.Size = new System.Drawing.Size(200, 200);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
-            string rnd_file4 = mylist[mylist.Count - 3].ToString();
+            string rnd_file4 = mylist[mylist.Count].ToString();
             button4.Image = Image.FromFile(rnd_file4 + ".bmp");
             mylist.Remove(Int32.Parse(rnd_file4));
 
@@ -100,7 +103,7 @@ namespace LastTry
             this.button5.Size = new System.Drawing.Size(200, 200);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
-            string rnd_file5 = mylist[mylist.Count - 4].ToString();
+            string rnd_file5 = mylist[mylist.Count].ToString();
             button5.Image = Image.FromFile(rnd_file5 + ".bmp");
             mylist.Remove(Int32.Parse(rnd_file5));
 
@@ -112,7 +115,7 @@ namespace LastTry
             this.button6.Size = new System.Drawing.Size(200, 200);
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = true;
-            string rnd_file6 = mylist[mylist.Count - 5].ToString();
+            string rnd_file6 = mylist[mylist.Count].ToString();
             button6.Image = Image.FromFile(rnd_file6 + ".bmp");
             mylist.Remove(Int32.Parse(rnd_file6));
 
@@ -137,7 +140,7 @@ namespace LastTry
             this.button8.Size = new System.Drawing.Size(200, 200);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
-            string rnd_file8 = mylist2[mylist2.Count-1].ToString();
+            string rnd_file8 = mylist2[mylist2.Count].ToString();
             button8.Image = Image.FromFile(rnd_file8 + ".bmp");
             mylist2.Remove(Int32.Parse(rnd_file8));
 
@@ -151,7 +154,7 @@ namespace LastTry
             this.button9.Size = new System.Drawing.Size(200, 200);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = true;
-            string rnd_file9 = mylist2[mylist2.Count-2].ToString();
+            string rnd_file9 = mylist2[mylist2.Count].ToString();
             button9.Image = Image.FromFile(rnd_file9 + ".bmp");
             mylist2.Remove(Int32.Parse(rnd_file9));
 
@@ -163,7 +166,7 @@ namespace LastTry
             this.button10.Size = new System.Drawing.Size(200, 200);
             this.button10.TabIndex = 9;
             this.button10.UseVisualStyleBackColor = true;
-            string rnd_file10 = mylist2[mylist2.Count-3].ToString();
+            string rnd_file10 = mylist2[mylist2.Count].ToString();
             button10.Image = Image.FromFile(rnd_file10 + ".bmp");
             mylist2.Remove(Int32.Parse(rnd_file10));
 
@@ -175,7 +178,7 @@ namespace LastTry
             this.button11.Size = new System.Drawing.Size(200, 200);
             this.button11.TabIndex = 10;
             this.button11.UseVisualStyleBackColor = true;
-            string rnd_file11 = mylist2[mylist2.Count-4].ToString();
+            string rnd_file11 = mylist2[mylist2.Count].ToString();
             button11.Image = Image.FromFile(rnd_file11 + ".bmp");
             mylist2.Remove(Int32.Parse(rnd_file11));
 
@@ -187,7 +190,7 @@ namespace LastTry
             this.button12.Size = new System.Drawing.Size(200, 200);
             this.button12.TabIndex = 11;
             this.button12.UseVisualStyleBackColor = true;
-            string rnd_file12 = mylist2[mylist2.Count-5].ToString();
+            string rnd_file12 = mylist2[mylist2.Count].ToString();
             button12.Image = Image.FromFile(rnd_file12 + ".bmp");
             mylist2.Remove(Int32.Parse(rnd_file12));
 
