@@ -234,7 +234,7 @@ namespace matching
                     DupCard.Enabled = false;
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) + 10);
                 }
-                else
+                else if (PendingImage1.Tag != PendingImage2.Tag)
                 {
                     Score.Text = Convert.ToString(Convert.ToInt32(Score.Text) - 10);
                     timer3.Start();
