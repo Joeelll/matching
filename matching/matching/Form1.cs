@@ -13,10 +13,8 @@ namespace matching
 {
     public partial class MatchingGame : Form
     {
-        int score = 0;
-        Random Location = new Random();
+        new Random Location = new Random();
         List<Point> points = new List<Point>();
-        bool again = false;
         PictureBox PendingImage1;
         PictureBox PendingImage2;
 
@@ -39,7 +37,7 @@ namespace matching
         {
             label3.Text = "Countdown:";
             label2.Text = "5";
-            Score.Text = "0";
+            Score.Text = "100";
             foreach (PictureBox picture in CardsHolder.Controls)
             {
                 picture.Enabled = false;
